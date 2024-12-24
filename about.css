@@ -1,0 +1,21 @@
+
+
+#about-us {
+    background-color: pink;
+    padding: 60px;
+    margin: 20px auto;
+    max-width: 1000px;
+    border-radius: 14px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 2);
+}
+
+#about-us h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+#about-us h3 {
+    font-size: 1.5rem;
+    margin-top: 20px;
+}

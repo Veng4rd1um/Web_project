@@ -1,0 +1,360 @@
+/* Основные стили */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    
+    
+}
+
+
+
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .card {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    .menu li {
+        font-size: 0.8rem;
+    }
+
+    .social-links img {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+
+
+
+
+
+header {
+    background-color: #343a40;
+    color: #ffffff;
+    padding: 10px 20px;
+}
+
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.logo a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 5px 10px;
+    transition: background-color 0.3s;
+}
+
+.menu li a:hover {
+    background-color: #495057;
+    border-radius: 5px;
+}
+
+
+
+.options {
+    display: flex;
+    gap: 10px;
+}
+
+select {
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+footer {
+    background-color: #343a40;
+    color: #fff;
+    /*text-align: center;*/
+    /*padding: 0px 10px;*/
+    margin-top: 20px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.footer-content-info {
+    margin: 0px 0;  
+    flex: 1;
+    text-align: left;
+    padding-left: 20px;
+    
+}
+
+.footer-content-sociallinks {
+    display: flex;
+    cursor: pointer;
+    gap: 20px;
+}
+
+.social-links {
+    padding: 0;
+    display: flex;
+    margin: 0;
+    list-style: none
+}
+
+.social-links li {
+    margin-right: 30px;
+}
+
+.social-links a:hover{
+    color: #00d1ff;
+}
+
+.social-links img {
+    width: 32px;
+    height: 32px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1370px;
+    min-height: 350px;
+    height: 100%;
+    padding: 80px;
+    margin-right: -5px;    
+    border-radius: 15px; 
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    /*background: linear-gradient(to right, rgba(0, 112, 255, 0.9), (rgba(0, 112, 255, 0.6)));*/
+    border-radius: 20px;
+    padding: 40px;
+    color: white;
+    max-width: 1200px;
+    width: 100%;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 7);
+    position: relative;  
+    background-color: #343a40;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+}
+
+.content .logo {
+    width: 50px;
+    height: auto;
+    color: white;
+    position: relative;
+}
+
+.content h1 {
+    font-size: 2.5rem;
+    text-decoration: none;
+}
+
+.content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    text-decoration: none;
+}
+
+.content ul {
+    list-style: none;
+    padding-left: 20px;
+    text-decoration: none;
+}
+
+.content ul li {
+    margin: 7px 0;
+    position: relative;
+    text-decoration: none;
+}
+
+.content ul li::before {
+    content: "▶";
+    position: absolute;
+    left: -15px;
+    color: white;
+}
+
+.person {
+    max-width: 40%;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+/*.container {
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}*/
+
+/* Стили для ссылок-кнопок */
+.button {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50vh;
+    background-color: #f8f9fa;
+}
+
+.auth-card {
+    width: 700px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.auth-header {
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    font-size: 1.5rem;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.auth-form {
+    padding: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-login {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.btn-login:hover {
+    background-color: #0056b3;
+}
+
+.btn-register {
+    background-color: #e9ecef;
+    color: #333;
+}
+
+.btn-register:hover {
+    background-color: #d6d8db;
+}
+
+.forgot-password {
+    text-align: right;
+    margin-top: 10px;
+}
+
+.forgot-password a {
+    font-size: 0.9rem;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.forgot-password a:hover {
+    text-decoration: underline;
+}
+

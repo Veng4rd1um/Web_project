@@ -1,0 +1,111 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.pricing {
+    text-align: center;
+    padding: 20px;
+    min-height: 100vh;
+    height: 1500px;
+    overflow: scroll;
+    gap: 20px;
+}
+
+.pricing h1 {
+    font-size: 2rem;
+    margin-bottom: 5px;
+}
+
+.pricing h2 {
+    font-size: 1.5rem;
+    color: #555;
+    margin-bottom: 1px;
+}
+
+.pricing p {
+    color: #777;
+}
+
+.pricing-card {
+    display: inline-block;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 300px;
+    margin: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: left;
+}
+
+.card-header {
+    background-color: #f1f1f1;
+    padding: 10px 15px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.card-content {
+    padding: 15px;
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    gap: 10px;
+    align-items: center;
+}
+
+.card-content img {
+    width: 40px;
+    height: 40px;
+}
+
+.card-content p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.card-footer {
+    background-color: #f9f9f9;
+    padding: 10px 15px;
+    text-align: center;
+    border-top: 1px solid #ddd;
+    margin-top: auto;
+}
+
+.card-footer p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.card-footer button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.card-footer button:hover {
+    background-color: #0056b3;
+}
+
+#scrollToTop {
+    position: fixed;
+    bottom: 140px;
+    right: 20px;
+    padding: 10px 15px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none; /* По умолчанию скрыта */
+    z-index: 1000; /* Чтобы кнопка была поверх других элементов */
+}

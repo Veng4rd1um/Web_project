@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rifty</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="about.html"></a>
+                <a href="servers.html"></a>
+                <a href="index.html">Rifty</a>
+            </div>
+            <ul class="menu">
+                <li><a data-translate="home" href="index.html">Home</a></li>
+                <li><a data-translate="about us" href="about.html">About us</a></li>
+                <li><a data-translate="servers" href="servers.html">Servers</a></li>
+                
+            </ul>
+            <div class="options">
+                <select id="language-switcher">
+                    <option value="en">English</option>
+                    <option value="ru">Русский</option>
+                    <option value="kz">Қазақ</option>
+                </select>
+                <a href="registration.html" id="register-btn" class="button">Registration</a>
+                <a href="login.html" id="login-btn" class="button">Login</a>
+            </div>
+        </nav>
+
+        <footer>
+            <div class="footer-content-info">
+                <p data-translate="footer">&copy; 2024 Rifty. All rights reserved.</p>
+                <p data-translate="footer">Contacts: sasanya@gmail.com | Phone number: +7 777 777 7777</p>
+                <p data-translate="footer">Headquarters:   Almaty,   Astana,   Dubai,   New York,   Madrid</p>
+            </div>
+            <div class="footer-content-sociallinks">
+                <ul class="social-links">
+                    <li><a href="https://www.facebook.com" target="_blank"><img src="images/facebook_icon.png" alt="Facebook"></a></li>
+                    <li><a href="https://instagram.com" target="_blank"><img src="images/instagram_icon.png" alt="Instagram"></a></li>
+                    <li><a href="https://x.com" target="_blank"><img src="images/x_icon.png" alt="X"></a></li>
+                </ul>
+            </div>
+        </footer>
+    </header>
+
+    <div class="container">
+        <div class="card">
+            <div class="content">
+                <!-- <img src="images/x_icon.png" alt="Logo" class="Logo"> -->
+                <!-- <h1>Rifty</h1> -->
+                <p data-translate="content">Virtual servers from KZT500</p>
+                <ul>
+                    <li data-translate="activation">activation</li>
+                    <li data-translate="guarantee">guarantee</li>
+                    <li data-translate="reliable">data center</li>
+                    <li data-translate="own hardware">own hardware</li>
+                    <li data-translate="resources">resources</li>
+                    <li data-translate="administration">administration hour for free</li>
+                </ul>
+            </div>
+            <img src="images/hosting_icon 256.png" alt="Person" class="Person">
+        </div>
+    </div>
+
+    <button id="openModalBtn">Open popup</button>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Information</h2>
+            <p>SOME TEXT ALIHAn</p>
+            <form>
+                <label for="feedback">Comments:</label><br>
+                <textarea id="feedback" name="feedback" rows="4" cols="50"></textarea><br>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+
+
+    
+
+    <script src="scripts.js"></script>
+</body>
+</html>
