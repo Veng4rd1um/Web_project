@@ -122,9 +122,9 @@ const dictionary = {
     },
     "our_story": { "ru": "Наша история", "kz": "Біздің тарихымыз", "en": "Our story" },
     "story_text": {
-        "ru": "Основанная в 2024 году, Rifty была создана для решения пробелов в индустрии хостинга.",
-        "kz": "2024 жылы құрылған Rifty хостинг саласындағы олқылықтарды толтыру үшін жасалды.",
-        "en": "Founded in 2024, Rifty was created to bridge the gap in the hosting industry, offering affordable and efficient solutions for individuals and businesses alike."
+        "ru": "Основанная в 2024 году, Filler Cloud была создана для решения пробелов в индустрии хостинга.",
+        "kz": "2024 жылы құрылған Filler Cloud хостинг саласындағы олқылықтарды толтыру үшін жасалды.",
+        "en": "Founded in 2024, Filler Cloud was created to bridge the gap in the hosting industry, offering affordable and efficient solutions for individuals and businesses alike."
     },
     "footer_copyright": {
         "ru": "© 2024 Filler Cloud. Все права защищены.",
