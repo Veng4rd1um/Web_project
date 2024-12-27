@@ -117,7 +117,7 @@ document.addEventListener("DOMContentLoaded", () => {
         "about us": "About us",
         "servers": "Servers",
         
-        "footer_copyright": "© 2024 Rifty. All rights reserved.",
+        "footer_copyright": "© 2024 Filler Cloud. All rights reserved.",
         "footer_contacts": "Contacts: sasanya@gmail.com | Phone: +7 777 777 7777",
         "footer_locations": "Headquarters: Almaty, Astana, Dubai, New York, Madrid",
 
@@ -145,7 +145,7 @@ document.addEventListener("DOMContentLoaded", () => {
         "about us": "О нас",
         "servers": "Серверы",
         
-        "footer_copyright": "© 2024 Rifty. Все права защищены.",
+        "footer_copyright": "© 2024 Filler Cloud. Все права защищены.",
         "footer_contacts":  "Контакты: sasanya@gmail.com | Телефон: +7 777 777 7777",
         "footer_locations": "Штаб-квартира: Алматы, Астана, Дубай, Нью-Йорк, Мадрид",
 
@@ -173,7 +173,7 @@ document.addEventListener("DOMContentLoaded", () => {
         "about us": "Біз туралы",
         "servers": "Серверлер",
         
-        "footer_copyright": "© 2024 Rifty. Барлық құқықтар сақталған.",
+        "footer_copyright": "© 2024 Filler Cloud. Барлық құқықтар сақталған.",
         "footer_contacts": "Байланыс: sasanya@gmail.com | Телефон: +7 777 777 7777",
         "footer_locations": "Бас кеңсе: Алматы, Астана, Дубай, Нью-Йорк, Мадрид",
 

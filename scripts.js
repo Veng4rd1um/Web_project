@@ -127,9 +127,9 @@ const dictionary = {
         "en": "Founded in 2024, Rifty was created to bridge the gap in the hosting industry, offering affordable and efficient solutions for individuals and businesses alike."
     },
     "footer_copyright": {
-        "ru": "© 2024 Rifty. Все права защищены.",
-        "kz": "© 2024 Rifty. Барлық құқықтар сақталған.",
-        "en": "© 2024 Rifty. All rights reserved."
+        "ru": "© 2024 Filler Cloud. Все права защищены.",
+        "kz": "© 2024 Filler Cloud. Барлық құқықтар сақталған.",
+        "en": "© 2024 Filler Cloud. All rights reserved."
     },
     "footer_contacts": {
         "ru": "Контакты: sasanya@gmail.com | Телефон: +7 777 777 7777",
