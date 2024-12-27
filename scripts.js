@@ -110,9 +110,9 @@ const dictionary = {
     "servers": { "ru": "Серверы", "kz": "Серверлер", "en": "Servers" },
     "about_us": { "ru": "О нас", "kz": "Біз туралы", "en": "About us" },
     "intro_text": {
-        "ru": "Rifty — это хостинг-провайдер, который фокусируется на предоставлении качественных услуг без лишних излишеств.",
-        "kz": "Rifty жоғары сапалы қызметтерді артық нәрселерсіз ұсынатын хостинг провайдері.",
-        "en": "Rifty is a hosting provider that focuses on delivering high-quality services without unnecessary frills."
+        "ru": "Filler Cloud — это хостинг-провайдер, который фокусируется на предоставлении качественных услуг без лишних излишеств.",
+        "kz": "Filler Cloud жоғары сапалы қызметтерді артық нәрселерсіз ұсынатын хостинг провайдері.",
+        "en": "Filler Cloud is a hosting provider that focuses on delivering high-quality services without unnecessary frills."
     },
     "our_mission": { "ru": "Наша миссия", "kz": "Біздің миссиямыз", "en": "Our mission" },
     "mission_text": {
@@ -140,7 +140,10 @@ const dictionary = {
         "ru": "Штаб-квартира: Алматы, Астана, Дубай, Нью-Йорк, Мадрид",
         "kz": "Бас кеңсе: Алматы, Астана, Дубай, Нью-Йорк, Мадрид",
         "en": "Headquarters: Almaty, Astana, Dubai, New York, Madrid"
-    }
+    },
+    "slide1_desc": {"ru": "Испытайте непревзойденную производительность серверов","kz": "Сервердің теңдессіз өнімділігін сезініңіз","en": "Experience unmatched server performance"},
+    "slide2_desc": {"ru": "Присоединяйтесь к тысячам довольных клиентов","kz": "Мыңдаған қанағаттанған клиенттерге қосылыңыз","en": "Join thousands of satisfied customers"},
+    "slide3_desc": {"ru": "Получите надежные решения для хостинга уже сегодня","kz": "Хостингке сенімді шешімдерді бүгін алыңыз","en": "Get reliable hosting solutions today"}
 };
 
 // Функция для перевода текста на странице

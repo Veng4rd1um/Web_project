@@ -12,7 +12,6 @@ body {
     padding: 20px;
     min-height: 100vh;
     height: 1500px;
-    overflow: scroll;
     gap: 20px;
 }
 
@@ -118,3 +117,5 @@ body {
     display: none; /* По умолчанию скрыта */
     z-index: 1000; /* Чтобы кнопка была поверх других элементов */
 }
+
+

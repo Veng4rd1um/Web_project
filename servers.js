@@ -114,7 +114,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const translations = {
     en: {
         "home": "Home",
-        "about us": "About Us",
+        "about us": "About us",
         "servers": "Servers",
         
         "footer_copyright": "© 2024 Rifty. All rights reserved.",
