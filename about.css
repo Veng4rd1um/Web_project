@@ -1,10 +1,13 @@
 
+body {
+    min-height: 165vh;
+}
 
 #about-us {
-    background-color: pink;
-    padding: 60px;
+    background-color: #C0C0C0;
+    padding: 40px;
     margin: 20px auto;
-    max-width: 1000px;
+    max-width: 900px;
     border-radius: 14px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 2);
 }
