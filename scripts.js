@@ -231,3 +231,8 @@ document.getElementById("scrollToTop").addEventListener("click", () => {
 
 
 
+// scripts.js
+
+// Получаем элементы
+
+

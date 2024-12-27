@@ -4,6 +4,7 @@ body {
     color: #333;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 .pricing {
@@ -45,6 +46,14 @@ body {
 .card-header {
     background-color: #f1f1f1;
     padding: 10px 15px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.model {
+    background-color: #f1f1f1;
+    padding: 0px 5px;
     font-weight: bold;
     font-size: 1.2rem;
     text-align: center;

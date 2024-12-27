@@ -12,7 +12,10 @@ const dictionary = {
     "signup_button": { "ru": "Зарегистрироваться", "kz": "Тіркелу", "en": "Sign up" },
     "footer_copyright": { "ru": "© 2024 Rifty. Все права защищены.", "kz": "© 2024 Rifty. Барлық құқықтар сақталған.", "en": "© 2024 Rifty. All rights reserved." },
     "footer_contacts": { "ru": "Контакты: sasanya@gmail.com | Телефон: +7 777 777 7777", "kz": "Байланыс: sasanya@gmail.com | Телефон: +7 777 777 7777", "en": "Contacts: sasanya@gmail.com | Phone: +7 777 777 7777" },
-    "footer_locations": { "ru": "Штаб-квартира: Алматы, Астана, Дубай, Нью-Йорк, Мадрид", "kz": "Бас кеңсе: Алматы, Астана, Дубай, Нью-Йорк, Мадрид", "en": "Headquarters: Almaty, Astana, Dubai, New York, Madrid" }
+    "footer_locations": { "ru": "Штаб-квартира: Алматы, Астана, Дубай, Нью-Йорк, Мадрид", "kz": "Бас кеңсе: Алматы, Астана, Дубай, Нью-Йорк, Мадрид", "en": "Headquarters: Almaty, Astana, Dubai, New York, Madrid" },
+    "cart": {"ru": "Корзина", "kz": "Себет", "en": "Cart"},
+    "amount" : {"ru": "Количество", "kz": "Саны", "en": "Amount"},
+    "amount_placeholder" : {"ru": "Введите количество", "kz": "Санын енгізіңіз", "en": "Enter the amount"}
 };
 
 // Function to translate the page

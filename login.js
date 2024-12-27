@@ -40,3 +40,55 @@ document.getElementById("language-switcher").addEventListener("change", (event) 
     const selectedLanguage = event.target.value;
     translatePage(selectedLanguage);
 });
+
+
+
+
+
+
+// scripts.js
+
+document.addEventListener('DOMContentLoaded', function() {
+    const prevButton = document.querySelector('.carousel-btn.prev');
+    const nextButton = document.querySelector('.carousel-btn.next');
+    const carouselContainer = document.querySelector('.carousel-container');
+    const slides = document.querySelectorAll('.carousel-slide');
+
+    let currentIndex = 0;
+
+    // Проверка на наличие кнопок и слайдов
+    if (!prevButton || !nextButton || slides.length === 0) {
+        console.error('Carousel buttons or slides are missing!');
+        return;
+    }
+
+    // Функция для обновления слайдов
+    function updateCarousel() {
+        const slideWidth = slides[0].offsetWidth;
+        carouselContainer.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+        console.log(`Current slide index: ${currentIndex}`); // Логирование индекса текущего слайда
+    }
+
+    // Переключение на следующий слайд
+    nextButton.addEventListener('click', function() {
+        if (currentIndex < slides.length - 1) {
+            currentIndex++;
+        } else {
+            currentIndex = 0; // Перейти к первому слайду
+        }
+        updateCarousel();
+    });
+
+    // Переключение на предыдущий слайд
+    prevButton.addEventListener('click', function() {
+        if (currentIndex > 0) {
+            currentIndex--;
+        } else {
+            currentIndex = slides.length - 1; // Перейти к последнему слайду
+        }
+        updateCarousel();
+    });
+
+    // Инициализация карусели
+    updateCarousel();
+});

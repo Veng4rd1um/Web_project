@@ -125,17 +125,20 @@ document.addEventListener("DOMContentLoaded", () => {
         "line-private-cloud-title": "Line Private Cloud",
         "line-public-cloud-title_1": "Line Public Cloud",
         "private-cloud-description": "Private Cloud tariff servers have access to the Internet via a common public address with the ability to forward any ports.",
+       
         "line-public-cloud-description": "Each server of the Public Cloud tariff has an individual public address",
-        "private-cloud-start-title": "Private Cloud Start",
-        "private_cloud_start_title": "Private Cloud Start 2.0",
-        "cpu": "Processor",
+        "private-cloud-start-title-1": "Medium Cloud",
+        "private-cloud-start-title-2": "Standard Cloud",
+        "private-cloud-start-title-3": "Premium Cloud", 
+        
+        "processor": "Processor",
         "ram": "RAM",
-        "storage": "Disk up to",
+        "disk": "Disk up to",
         "price": "Price",
         "order-button": "Add to cart",
-        "GHz": "GHz",
-        "GB": "GB",
-        "Mbps": "Mbps"
+        "ghz": "GHz",
+        "gb": "GB",
+        "mbps": "Mbps"
     },
     ru: {
         "home": "Главная",
@@ -151,16 +154,19 @@ document.addEventListener("DOMContentLoaded", () => {
         "line-public-cloud-title_1": "Линия публичного облака",
         "private-cloud-description": "Серверы тарифа Private Cloud имеют доступ к Интернету через общий публичный адрес с возможностью переадресации любых портов.",
         "line-public-cloud-description": "Каждый сервер тарифа Public Cloud имеет индивидуальный публичный адрес.",
-        "private-cloud-start-title": "Частное облако Старт",
-        "private_cloud_start_title": "Частное облако Старт 2.0",
-        "cpu": "Процессор",
+        
+        "private-cloud-start-title-1": "Среднее облако",
+        "private-cloud-start-title-2": "Стандарт облако",
+        "private-cloud-start-title-3": "Премиум облако", 
+        
+        "processor": "Процессор",
         "ram": "ОЗУ",
-        "storage": "Диск до",
+        "disk": "Диск до",
         "price": "Цена",
         "order-button": "Добавить в корзину",
-        "GHz": "ГГц",
-        "GB": "ГБ",
-        "Mbps": "Мбит/с"
+        "ghz": "ГГц",
+        "gb": "ГБ",
+        "mbps": "Мбит/с"
     },
     kz: {
         "home": "Басты бет",
@@ -176,16 +182,19 @@ document.addEventListener("DOMContentLoaded", () => {
         "line-public-cloud-title_1": "Жалпы бұлттық желі",
         "private-cloud-description": "Private Cloud тарифтік серверлері жалпы жалпы мекенжай арқылы Интернетке қол жеткізе алады.",
         "line-public-cloud-description": "Қоғамдық бұлт тарифінің әрбір серверінде жеке жалпы мекенжайы болады",
-        "private-cloud-start-title": "Жеке бұлтты бастау",
-        "private_cloud_start_title": "Жеке бұлтты бастау 2.0",
-        "cpu": "Процессор",
+        
+        "private-cloud-start-title-1": "Орташа бұлт",
+        "private-cloud-start-title-2": "Стандарт бұлт",
+        "private-cloud-start-title-3": "Премиум бұлт", 
+
+        "processor": "Процессор",
         "ram": "ЖЖҚ",
-        "storage": "Диск дейін",
+        "disk": "Диск дейін",
         "price": "Бағасы",
         "order-button": "Себетке қосу",
-        "GHz": "ГГц",
-        "GB": "ГБ",
-        "Mbps": "Мбит/с",
+        "ghz": "ГГц",
+        "gb": "ГБ",
+        "mbps": "Мбит/с",
     }
 };
 
