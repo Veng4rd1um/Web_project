@@ -358,3 +358,119 @@ footer {
     text-decoration: underline;
 }
 
+
+
+/* Основные стили */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+/* Контейнер авторизации */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #f8f9fa;
+}
+
+.auth-card {
+    width: 400px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.auth-header {
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    font-size: 1.5rem;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.auth-form {
+    padding: 20px; /* Добавлен padding для отступов от краёв */
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px; /* Увеличен padding для улучшения восприятия */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box; /* Учитываем padding внутри элемента */
+}
+
+/* Стили кнопок */
+.form-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-login {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.btn-login:hover {
+    background-color: #0056b3;
+}
+
+.btn-signup {
+    background-color: #28a745;
+    color: #fff;
+}
+
+.btn-signup:hover {
+    background-color: #218838;
+}
+
+/* Сообщение об ошибке */
+#error-message {
+    color: red;
+    font-size: 0.9rem;
+    margin-top: 10px;
+    display: none;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .auth-card {
+        width: 90%;
+        margin: 0 10px; /* Отступы от краёв экрана для маленьких устройств */
+    }
+
+    .btn {
+        font-size: 0.9rem;
+    }
+}

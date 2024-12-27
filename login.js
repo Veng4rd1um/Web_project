@@ -92,3 +92,86 @@ document.addEventListener('DOMContentLoaded', function() {
     // Инициализация карусели
     updateCarousel();
 });
+
+
+
+// Общая функция для отображения ошибок
+const showError = (message) => {
+    const errorMessage = document.getElementById("error-message");
+    errorMessage.textContent = message;
+    errorMessage.style.display = "block";
+};
+
+// Общая функция для скрытия ошибок
+const hideError = () => {
+    const errorMessage = document.getElementById("error-message");
+    errorMessage.textContent = "";
+    errorMessage.style.display = "none";
+};
+
+// Общая функция для отправки запросов на сервер
+const sendRequest = async (url, method, body) => {
+    try {
+        const response = await fetch(url, {
+            method: method,
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(body),
+        });
+
+        if (!response.ok) {
+            const errorData = await response.json();
+            throw new Error(errorData.message || "Unknown error occurred.");
+        }
+
+        return await response.json();
+    } catch (error) {
+        throw new Error(error.message || "Server error. Please try again later.");
+    }
+};
+
+// Логика для кнопки Log In
+const handleLogin = async () => {
+    const nickname = document.getElementById("nickname").value.trim();
+    const password = document.getElementById("password").value.trim();
+
+    if (!nickname || !password) {
+        showError("Nickname and password are required.");
+        return;
+    }
+
+    hideError();
+
+    try {
+        await sendRequest("http://localhost:8080/api/auth/login", "POST", { username: nickname, password });
+        alert("Login successful!");
+        window.location.href = "/index.html"; // Перенаправление на главную страницу
+    } catch (error) {
+        showError(error.message);
+    }
+};
+
+// Логика для кнопки Sign Up
+const handleSignup = async () => {
+    const username = document.getElementById("nickname").value.trim();
+    const password = document.getElementById("password").value.trim();
+
+    if (!username || !password) {
+        showError("Username and password are required.");
+        return;
+    }
+
+    hideError();
+
+    try {
+        await sendRequest("http://localhost:8080/api/auth/signup", "POST", { username, password });
+        alert("Registration successful!");
+        window.location.href = "/index.html"; // Перенаправление на главную страницу
+    } catch (error) {
+        showError(error.message);
+    }
+};
+
+
+// Привязываем обработчики событий к кнопкам
+document.getElementById("login-button").addEventListener("click", handleLogin);
+document.getElementById("signup-button").addEventListener("click", handleSignup);
