@@ -178,3 +178,40 @@ body {
 .remove-item:hover {
     background-color: #ff1a1a;
 }
+
+button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+.options {
+    display: flex;
+    align-items: center;
+}
+
+.cart-icon, .history-icon {
+    font-size: 20px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+
+#historyList {
+    list-style-type: none;
+    padding: 0;
+}
+
+#historyList li {
+    background-color:black;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+}

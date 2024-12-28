@@ -31,19 +31,26 @@
                     <option value="eur">EUR</option>
                     <option value="kzt">KZT</option>
                 </select>
-                <div class="cart-icon" id="cartIcon">🛒</div>
-            </div>
-        </nav>
-
-        <div class="modal" id="cartModal">
-            <div class="modal-content">
-                <h2>Cart</h2>
-                <div id="cartItems">
-                    <p>Cart is empty</p>
+            <div class="cart-icon" id="cartIcon">🛒</div>
+            <span class="history-icon" id="historyIcon">📜</span>
+            <div class="modal" id="cartModal">
+                <div class="modal-content">
+                    <h2>Cart</h2>
+                    <div id="cartItems">
+                        <p>Cart is empty</p>
+                    </div>
+                    <button id="closeModal">Buy</button>
                 </div>
-                <button id="closeModal">Close</button>
             </div>
-        </div>
+
+            <div id="purchaseHistory" class="modal">
+                <div class="modal-content">
+                    <h2>Purchase History</h2>
+                    <ul id="historyList">
+                    </ul>
+                    <button id="closeHistory">Close</button>
+                </div>
+            </div>
 
         <footer>
             <div class="footer-content-info">
