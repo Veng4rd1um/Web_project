@@ -1,7 +1,4 @@
-/* Основные стили */
 
-
-/* Основные стили */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -250,7 +247,7 @@ footer {
     right: 10px;
 }
 
-/* Мобильные стили */
+/* адаптивность */
 @media (max-width: 768px) {
     nav {
         flex-direction: column;

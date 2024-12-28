@@ -75,5 +75,5 @@ function translatePage(language) {
     });
 }
 
-// Инициализация страницы с английским языком
+// дефолт ағылшын тілі
 translatePage("en");

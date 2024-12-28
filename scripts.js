@@ -146,7 +146,6 @@ const dictionary = {
     "slide3_desc": {"ru": "Получите надежные решения для хостинга уже сегодня","kz": "Хостингке сенімді шешімдерді бүгін алыңыз","en": "Get reliable hosting solutions today"}
 };
 
-// Функция для перевода текста на странице
 function translatePage(language) {
     const elements = document.querySelectorAll("[data-translate]");
     elements.forEach(element => {
@@ -159,28 +158,26 @@ function translatePage(language) {
     });
 }
 
-// Обработчик события для переключателя языка
 document.getElementById("language-switcher").addEventListener("change", (event) => {
     const selectedLanguage = event.target.value;
     translatePage(selectedLanguage);
 });
 
-// Перевод страницы при загрузке (по умолчанию)
+
 document.addEventListener("DOMContentLoaded", () => {
     const defaultLanguage = "en";
     translatePage(defaultLanguage);
 });
 
 
-
-
+//авлюта ауыстыру
         const currencyRates = {
             usd: 1,
             eur: 0.93,
             kzt: 460
         };
         
-        // Функция для обновления цены
+        
         function updatePrice() {
             const selectedCurrency = currencySwitcher.value;
             const priceElements = document.querySelectorAll(".price");
@@ -214,7 +211,7 @@ document.addEventListener("DOMContentLoaded", () => {
 // Кнопка
 window.addEventListener("scroll", () => {
     const scrollToTopBtn = document.getElementById("scrollToTop");
-    if (window.scrollY > 300) { // Показывать кнопку после прокрутки 300px
+    if (window.scrollY > 300) { 
         scrollToTopBtn.style.display = "block";
     } else {
         scrollToTopBtn.style.display = "none";
@@ -234,8 +231,5 @@ document.getElementById("scrollToTop").addEventListener("click", () => {
 
 
 
-// scripts.js
-
-// Получаем элементы
 
 
