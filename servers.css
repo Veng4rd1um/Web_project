@@ -139,14 +139,14 @@ body {
     align-items: center;
 }
 .modal-content {
-    background: black;
+    background: #343a40;
     padding: 20px;
     border-radius: 8px;
     text-align: center;
 }
 .close-btn {
     background: #007bff;
-    color: blue;
+    color: black;
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
@@ -154,4 +154,27 @@ body {
 }
 .close-btn:hover {
     background: #0056b3;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+    padding: 5px;
+    background-color: black;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.remove-item {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.remove-item:hover {
+    background-color: #ff1a1a;
 }

@@ -1,5 +1,4 @@
 /*const dictionary = { 
-    // Ваш словарь с переводами
     "home": { "ru": "Главная", "kz": "Басты бет", "en": "Home" },
     "about us": { "ru": "О нас", "kz": "Біз туралы", "en": "About Us" },
     "servers": { "ru": "Серверы", "kz": "Серверлер", "en": "Servers" },
@@ -80,37 +79,8 @@
     }
 };
 
-// Функция для перевода страницы
-function translatePage(language) {
-    const elements = document.querySelectorAll("[data-translate]"); // Находим все элементы с атрибутом data-translate
-    elements.forEach(element => {
-        const key = element.getAttribute("data-translate"); // Получаем ключ из атрибута data-translate
-        if (dictionary[key] && dictionary[key][language]) {
-            element.textContent = dictionary[key][language]; // Заменяем текст на соответствующий перевод
-        } else {
-            console.warn(`Не найден перевод для ключа: ${key}`); // Если перевод не найден
-        }
-    });
-}
 
-// Обработчик события для переключателя языка
-document.getElementById("language-switcher").addEventListener("change", (event) => {
-    const selectedLanguage = event.target.value; // Получаем выбранный язык
-    translatePage(selectedLanguage); // Переводим страницу на выбранный язык
-    localStorage.setItem("language", selectedLanguage); // Сохраняем выбранный язык в localStorage
-});
-
-// Перевод страницы при загрузке (по умолчанию)
-document.addEventListener("DOMContentLoaded", () => {
-    const savedLanguage = localStorage.getItem("language") || "en"; // Получаем язык из localStorage или используем английский по умолчанию
-    translatePage(savedLanguage); // Переводим страницу на выбранный язык
-});
-
-
-*/
-
-
-// Словарь переводов
+/*сөздік*/ 
     const translations = {
     en: {
         "home": "Home",
@@ -199,9 +169,7 @@ document.addEventListener("DOMContentLoaded", () => {
 };
 
 
-// Функция перевода
 function translatePage(language) {
-    // Перевод статического текста
     document.querySelectorAll("[data-translate]").forEach(element => {
         const key = element.getAttribute("data-translate");
         if (translations[language][key]) {
@@ -209,79 +177,30 @@ function translatePage(language) {
         }
     });
 
-    // Перевод значений в карточках (динамические данные)
     document.querySelectorAll("[data-translate-value]").forEach(element => {
         const key = element.getAttribute("data-translate-value");
-        const value = element.getAttribute("data-original-value"); // Исходное значение (цифры)
+        const value = element.getAttribute("data-original-value"); 
         if (translations[language][key]) {
-            const unit = translations[language][key]; // Единицы измерения (например, "ГГц", "GB")
-            element.innerHTML = `${value} ${unit}`; // Формируем строку с числом и единицей измерения
+            const unit = translations[language][key]; 
+            element.innerHTML = `${value} ${unit}`; 
         }
     });
 
-    // Перевод цены (обрабатываем отдельно, чтобы сохранить цифры)
     document.querySelectorAll("[data-price]").forEach(element => {
-        const price = element.getAttribute("data-price"); // Цена (цифры)
-        const currency = translations[language]["price"]; // Перевод слова "Цена"
-        element.innerHTML = `${currency}: ${price}`; // Формируем строку с переводом и цифрами
+        const price = element.getAttribute("data-price"); 
+        const currency = translations[language]["price"]; 
+        element.innerHTML = `${currency}: ${price}`; 
     });
 }
 
-// Обработчик изменения языка
 document.getElementById("language-switcher").addEventListener("change", (event) => {
     const selectedLanguage = event.target.value;
     translatePage(selectedLanguage);
 });
 
-// Установить язык по умолчанию
 translatePage("en");
 
-  
 
-/*document.addEventListener('DOMContentLoaded', () => {
-    const cartModal = document.getElementById('cartModal');
-    const closeModal = document.getElementById('closeModal');
-    const addToCartButtons = document.querySelectorAll('.add-to-cart');
-    const cartItems = document.getElementById('cartItems');
-
-    // Открытие модального окна
-    document.querySelector('.cart-icon')?.addEventListener('click', () => {
-        cartModal.style.display = 'flex';
-    });
-
-    // Закрытие модального окна
-    closeModal.addEventListener('click', () => {
-        cartModal.style.display = 'none';
-    });
-
-    // Закрытие модального окна при клике вне его
-    window.addEventListener('click', (event) => {
-        if (event.target === cartModal) {
-            cartModal.style.display = 'none';
-        }
-    });
-
-    // Добавление товара в корзину
-    addToCartButtons.forEach(button => {
-        button.addEventListener('click', () => {
-            const name = button.getAttribute('data-name'); // Получаем только название товара
-
-            // Убираем сообщение "Корзина пуста", если это первый товар
-            if (cartItems.textContent.includes('Корзина пуста')) {
-                cartItems.innerHTML = '';
-            }
-
-            // Проверяем, есть ли уже товар с таким названием в корзине
-            const existingItem = Array.from(cartItems.children).find(item => item.textContent === name);
-            if (!existingItem) {
-                // Создаем элемент для товара
-                const cartItem = document.createElement('p');
-                cartItem.textContent = name; // Добавляем только название товара
-                cartItems.appendChild(cartItem);
-            }
-        });
-    });
-});*/
 
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -290,47 +209,54 @@ document.addEventListener('DOMContentLoaded', () => {
     const addToCartButtons = document.querySelectorAll('.add-to-cart');
     const cartItems = document.getElementById('cartItems');
 
-    // Открытие модального окна
     document.querySelector('.cart-icon')?.addEventListener('click', () => {
         cartModal.style.display = 'flex';
     });
 
-    // Закрытие модального окна
     closeModal.addEventListener('click', () => {
         cartModal.style.display = 'none';
     });
 
-    // Закрытие модального окна при клике вне его
     window.addEventListener('click', (event) => {
         if (event.target === cartModal) {
             cartModal.style.display = 'none';
         }
     });
 
-    // Добавление товара в корзину
     addToCartButtons.forEach(button => {
         button.addEventListener('click', () => {
-            const name = button.getAttribute('data-name'); // Получаем название товара
-            const model = button.closest('.pricing-card').querySelector('.model').textContent; // Получаем модель товара
+            const name = button.getAttribute('data-name'); 
+            const model = button.closest('.pricing-card').querySelector('.model').textContent; 
 
-            // Убираем сообщение "Корзина пуста", если это первый товар
-            if (cartItems.textContent.includes('Корзина пуста')) {
+            if (cartItems.textContent.includes('Cart is empty')) {
                 cartItems.innerHTML = '';
             }
 
-            // Проверяем, есть ли уже товар с таким названием и моделью в корзине
             const existingItem = Array.from(cartItems.children).find(item => item.textContent === `${name} (Модель ${model})`);
             if (!existingItem) {
-                // Создаем элемент для товара
-                const cartItem = document.createElement('p');
-                cartItem.textContent = `${name}  ${model}`; // Добавляем название и модель товара
+                const cartItem = document.createElement('div');
+                cartItem.classList.add('cart-item');
+                cartItem.textContent = `${name} ${model}`;
+
+                // удалить
+                const removeButton = document.createElement('button');
+                removeButton.textContent = 'Remove';
+                removeButton.classList.add('remove-item');
+                cartItem.appendChild(removeButton);
+
+                // товар қосу
                 cartItems.appendChild(cartItem);
+
+                removeButton.addEventListener('click', () => {
+                    cartItem.remove();
+                    if (cartItems.children.length === 0) {
+                        cartItems.innerHTML = '<p>Cart is empty</p>';
+                    }
+                });
             }
         });
     });
 });
-
-
 
 
 
