@@ -238,7 +238,97 @@ translatePage("en");
 
   
 
+/*document.addEventListener('DOMContentLoaded', () => {
+    const cartModal = document.getElementById('cartModal');
+    const closeModal = document.getElementById('closeModal');
+    const addToCartButtons = document.querySelectorAll('.add-to-cart');
+    const cartItems = document.getElementById('cartItems');
 
+    // Открытие модального окна
+    document.querySelector('.cart-icon')?.addEventListener('click', () => {
+        cartModal.style.display = 'flex';
+    });
+
+    // Закрытие модального окна
+    closeModal.addEventListener('click', () => {
+        cartModal.style.display = 'none';
+    });
+
+    // Закрытие модального окна при клике вне его
+    window.addEventListener('click', (event) => {
+        if (event.target === cartModal) {
+            cartModal.style.display = 'none';
+        }
+    });
+
+    // Добавление товара в корзину
+    addToCartButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const name = button.getAttribute('data-name'); // Получаем только название товара
+
+            // Убираем сообщение "Корзина пуста", если это первый товар
+            if (cartItems.textContent.includes('Корзина пуста')) {
+                cartItems.innerHTML = '';
+            }
+
+            // Проверяем, есть ли уже товар с таким названием в корзине
+            const existingItem = Array.from(cartItems.children).find(item => item.textContent === name);
+            if (!existingItem) {
+                // Создаем элемент для товара
+                const cartItem = document.createElement('p');
+                cartItem.textContent = name; // Добавляем только название товара
+                cartItems.appendChild(cartItem);
+            }
+        });
+    });
+});*/
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const cartModal = document.getElementById('cartModal');
+    const closeModal = document.getElementById('closeModal');
+    const addToCartButtons = document.querySelectorAll('.add-to-cart');
+    const cartItems = document.getElementById('cartItems');
+
+    // Открытие модального окна
+    document.querySelector('.cart-icon')?.addEventListener('click', () => {
+        cartModal.style.display = 'flex';
+    });
+
+    // Закрытие модального окна
+    closeModal.addEventListener('click', () => {
+        cartModal.style.display = 'none';
+    });
+
+    // Закрытие модального окна при клике вне его
+    window.addEventListener('click', (event) => {
+        if (event.target === cartModal) {
+            cartModal.style.display = 'none';
+        }
+    });
+
+    // Добавление товара в корзину
+    addToCartButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const name = button.getAttribute('data-name'); // Получаем название товара
+            const model = button.closest('.pricing-card').querySelector('.model').textContent; // Получаем модель товара
+
+            // Убираем сообщение "Корзина пуста", если это первый товар
+            if (cartItems.textContent.includes('Корзина пуста')) {
+                cartItems.innerHTML = '';
+            }
+
+            // Проверяем, есть ли уже товар с таким названием и моделью в корзине
+            const existingItem = Array.from(cartItems.children).find(item => item.textContent === `${name} (Модель ${model})`);
+            if (!existingItem) {
+                // Создаем элемент для товара
+                const cartItem = document.createElement('p');
+                cartItem.textContent = `${name}  ${model}`; // Добавляем название и модель товара
+                cartItems.appendChild(cartItem);
+            }
+        });
+    });
+});
 
 
 
